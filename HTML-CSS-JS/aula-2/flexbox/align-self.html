@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-self</title>
+    <style>
+        .container{
+            max-width:350px;
+            border: 1px solid black;
+            display: flex;
+            margin-bottom: 10px;
+            /* align-items: center; */
+         
+        }
+        .align-container{
+            align-items: center;
+        }
+
+        .item {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 0 5px;
+            margin: 5px;
+            
+            
+        }
+        .center {
+            align-self: center;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+
+        .flex-end {
+           
+            align-self: flex-end;
+        }
+
+        .baseline {
+           
+            align-self: space-between;
+       }
+
+       .stretch {
+           
+        align-self: stretch;
+       }
+
+       .auto{
+        align-self: auto;
+       }
+       .column{
+        flex-direction: column;
+       }
+
+
+      
+        
+    </style>
+</head>
+<body>
+    <h2>Align-self</h2>
+
+    <p>align-center</p>
+    <section class="container align-container">
+        <div class="item auto">LoremIpsum</div>
+        <div class="item auto">Lorem Ipsum has been the industry's</div>
+        <div class="item auto">Aldus  has </div>
+        <div class="item auto">Aldus  has been the</div>
+     
+    </section>
+
+    <p>mix</p>
+    <section class="container">
+        <div class="item center">LoremIpsum</div>
+        <div class="item start">Lorem Ipsum has been the industry's</div>
+        <div class="item stretch">Aldus  has </div>
+        <div class="item">Aldus  has been the</div>
+        <div class="item">Aldus industry's</div>
+        <div class="item">Aldus</div>
+        <div class="item">Aldus  has </div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container flex-start">
+        <div class="item center">LoremIpsum</div>
+        <div class="item start">Lorem Ipsum has been the industry's</div>
+        <div class="item end">Aldus  has Lorem Ipsum has been the industry'sLorem Ipsum has been the industry'sLorem Ipsum has been the industry'sLorem Ipsum has been the industry'sLorem Ipsum has been the industry's</div>
+      
+    </section>
+
+   <h2>column </h2>
+   <p>align-center</p>
+   <section class="container align-container">
+       <div class="item auto">LoremIpsum</div>
+       <div class="item auto">Lorem Ipsum has been the industry's</div>
+       <div class="item auto">Aldus  has </div>
+       <div class="item auto">Aldus  has been the</div>
+    
+   </section>
+
+   <p>mix</p>
+   <section class="container column">
+       <div class="item center">LoremIpsum</div>
+       <div class="item start">Lorem Ipsum has been the industry's</div>
+       <div class="item stretch">Aldus  has </div>
+       <div class="item">Aldus  has been the</div>
+       <div class="item">Aldus industry's</div>
+       <div class="item">Aldus</div>
+       <div class="item">Aldus  has </div>
+   </section>
+
+   <p>flex-start</p>
+   <section class="container column">
+       <div class="item center">LoremIpsum</div>
+       <div class="item start">Lorem</div>
+       <div class="item end">Aldus  has Lorem Ipsum has been the industry'sLorem Ipsum has been the industry'sLorem Ipsum has been the industry'sLorem Ipsum has been the industry'sLorem Ipsum has been the industry's</div>
+     
+   </section>
+   
+
+
+    
+</body>
+</html>
