@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+
+}
+
+div img {
+    display: block;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+    /* padding: 10px 15px; */
+}
+
+header{
+    background-color: #122A57;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    
+}
+
+header .list-items {
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items li a {
+    color: #ffff;
+}
+
+header .menu {
+    justify-content: space-between;
+}
+
+.apresentation {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentation .text__apresentation{
+    min-height: 200px;
+    width: 100%;
+}
+
+.text__apresentation h1{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #122A57;
+    color: #ffff;
+    text-align: center;
+    border-radius: 30px ;
+    width: 220px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#quemSomos{
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quemSomos h2{
+    font-size: 37px;
+    color:#122A57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#quemSomos h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+#quemSomos p {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#quemSomos img {
+    min-width: 320px;
+}
+
+.container__externo{
+    background-color: #122A57;
+    width: 100%;
+}
+
+#services{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+
+#services h2{
+    color: #ffff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.list__services{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.list__services .item__service{
+    text-align: center;
+}
+
+.item__service a{
+    width: 220px;
+    background-color: #ffff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: #122A57;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.item__service p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+.item__service img{
+    width: 80px;
+    margin: auto;
+}
+
+#plans{
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+
+}
+
+#plans h2{
+    font-size: 32px;
+}
+
+.list__plan{
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+
+}
+
+.item__plan{
+    flex: 1;
+    border:2px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+    margin-bottom: 20px ;
+}
+
+.item__plan .btn{
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+.item__plan h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.item__plan h3::after{
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.item__plan ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.item__plan ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.item__plan ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 5px;
+
+}
+
+footer{
+    background-color: #122A57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: #ffff;
+}
+
+/* mobile */
+
+@media(max-width:992px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentation{
+        flex-direction: column-reverse;
+    }
+
+    .apresentation .text__apresentation{
+        width: 100%;
+    }
+
+    #quemSomos{
+        flex-direction: column-reverse;
+    }
+
+    #quemSomos img{
+        min-width: 320px;
+        margin:auto;
+        }
+
+    .list__services{
+        flex-direction: column;
+    }
+
+    .item__service img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .list__plan{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .list__plan .item__plan{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+}
